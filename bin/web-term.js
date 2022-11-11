@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 
 "use strict";
-
 // Dependencies
-const Lien = require("lien")
-  , WebTerm = require(__dirname + "/../lib")
-  , SocketIO = require("socket.io")
+const Lien = require("lien");
+const WebTerm = require(__dirname + "/../lib");
+const SocketIO = require("socket.io");
   , Logger = require("bug-killer")
   , Tilda = require("tilda")
   , Path = require("path")
@@ -204,7 +203,6 @@ parser.option([
 
   // Handle connections
   app.io.sockets.on("connection", function (socket) {
-
     if (checkAuth(socket.handshake.query)) {
       return socket.disconnect();
     }

@@ -8,7 +8,7 @@ specifiers:
   fwatcher: ^2.2.0
   is-there: ^4.0.0
   lien: ^3.0.4
-  node-pty: ^0.9.0
+  node-pty: ^0.10.1
   opn: ^5.1.0
   r-json: ^1.2.0
   socket.io: ^2.0.3
@@ -24,7 +24,7 @@ dependencies:
   fwatcher: 2.2.9
   is-there: 4.5.1
   lien: 3.3.1
-  node-pty: 0.9.0
+  node-pty: registry.npmmirror.com/node-pty/0.10.1
   opn: 5.5.0
   r-json: 1.2.10
   socket.io: 2.5.0
@@ -885,20 +885,9 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: false
 
-  /nan/2.17.0:
-    resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==}
-    dev: false
-
   /negotiator/0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
-    dev: false
-
-  /node-pty/0.9.0:
-    resolution: {integrity: sha512-MBnCQl83FTYOu7B4xWw10AW77AAh7ThCE1VXEv+JeWj8mSpGo+0bwgsV+b23ljBFwEM9OmsOv3kM27iUPPm84g==}
-    requiresBuild: true
-    dependencies:
-      nan: 2.17.0
     dev: false
 
   /noop6/1.0.9:
@@ -1394,4 +1383,19 @@ packages:
 
   /yeast/0.1.2:
     resolution: {integrity: sha512-8HFIh676uyGYP6wP13R/j6OJ/1HwJ46snpvzE7aHAN3Ryqh2yX6Xox2B4CUmTwwOIzlG3Bs7ocsP5dZH/R1Qbg==}
+    dev: false
+
+  registry.npmmirror.com/nan/2.17.0:
+    resolution: {integrity: sha512-2ZTgtl0nJsO0KQCjEpxcIr5D+Yv90plTitZt9JBfQvVJDS5seMl3FOvsh3+9CoYWXf/1l5OaZzzF6nDm4cagaQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/nan/-/nan-2.17.0.tgz}
+    name: nan
+    version: 2.17.0
+    dev: false
+
+  registry.npmmirror.com/node-pty/0.10.1:
+    resolution: {integrity: sha512-JTdtUS0Im/yRsWJSx7yiW9rtpfmxqxolrtnyKwPLI+6XqTAPW/O2MjS8FYL4I5TsMbH2lVgDb2VMjp+9LoQGNg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/node-pty/-/node-pty-0.10.1.tgz}
+    name: node-pty
+    version: 0.10.1
+    requiresBuild: true
+    dependencies:
+      nan: registry.npmmirror.com/nan/2.17.0
     dev: false
