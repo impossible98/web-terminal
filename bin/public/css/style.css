@@ -1,0 +1,32 @@
+div {
+    border: 0;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+div.terminal > div {
+    white-space: nowrap;
+    font-family: "Monaco", monospace;
+    font-weight: normal;
+}
+
+div.terminal > div > span {
+    display: inline-block;
+}
+
+.terminal {
+    font-family: monospace;
+    font-size: 14px;
+    color: #f0f0f0;
+    background: #1A1A1A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.reverse-video {
+    color: #000;
+    background: #f0f0f0;
+}
